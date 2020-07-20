@@ -10,10 +10,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MK Profile</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark navbar-expand-sm">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
         <!--Container for nav element-->
         <!--d-none display none breakpoint d-sm-inline-block-->
@@ -28,15 +30,16 @@
           >
         </span>
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Work</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#intro">About</a>
+          <a class="nav-item nav-link" href="#projectbg">Work</a>
+          <a class="nav-item nav-link" href="#footer">Contact</a>
         </div>
         <!--nav container-->
       </div>
       <!--nav bar-->
     </nav>
-    <header class="justify-content-center">
+    <!-- About  section-->
+    <section id="intro"> 
       <div class="jumbotron" id="header">
         <div class="container">
           <h1 class="mb-4" id="greet">
@@ -45,14 +48,68 @@
           <p class="lead">I am a junior web developer from Melbourne</p>
         </div>
       </div>
-    </header>
+      </section > 
+    <!-- About section end-->
+
+    <!--Project section start-->
+    <section id="projectbg" >
+     
     <div class="container">
+      <h1 id="prohead">Some of my Project work</h1>
       <div class="row">
-        <div class="col-12"></div>
-        <!--column 12-->
+      <!-- First project- Start up page  -->
+      <Section class="card mb-5 bg-primary text-light border-warning" id="firstProject">
+        <div class="card-body">
+        <img class="img-fluid images" src="pro1.png" alt="Project one">
+        <h2 class="card-title"> Tech Startup Page</h2>
+        <p class="card-text">This is a startup page idea with html and css</p>
+        <a class="card-link text-light" href="https://mohammad2527.github.io/Web_Dev_One/">Startup Page</a>
       </div>
-      <!-- row-->
-    </div>
-    <!-- container-->
+      </section>
+      <!-- End First project- Start up page  -->
+       <!-- Second project- Flex box  -->
+       <Section class="card mb-5 bg-primary text-light" id="secondProject">
+        <div class="card-body">
+        <img class="img-fluid images" src="pro2.png" alt="Project two">
+        <h2 class="card-title"> Image gallery </h2>
+        <p class="card-text">This is an image gallery with flex box property.</p>
+        <a class="card-link text-light" href="https://mohammad2527.github.io/Web_Dev_One/">Flexbox Project</a>
+      </div>
+      </section>
+      <!-- End Second project- Flex box  -->
+       <!-- Third project- CSS grid  -->
+       <Section class="card mb-5 bg-primary text-light" id="thirdProject">
+        <div class="card-body">
+        <img class="img-fluid images" src="pro3.png" alt="Project one">
+        <h2 class="card-title">Image gallery</h2>
+        <p class="card-text">This is an image gallery with CSS grid property.</p>
+        <a class="card-link text-light" href="https://mohammad2527.github.io/Web_Dev_One/">CSS Grid Project</a>
+      </div>
+      </section>
+      <!-- End Third project- CSS grid  -->
+    </div><!-- row div- project-->
+    </div> <!-- Project container-->
+  </section>
+    
+  
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+  <div class="container footer" id="footer" >
+  <h1>Contact Details</h1>
+  <section class="icon ">
+  <a mailto="kawshick2527@gmail.com" class="fa fa-google"></a>
+  <a href="www.linkedin.com/in/mohammad-kawshick" class="fa fa-linkedin"></a>
+  <a href="https://github.com/Mohammad2527" class="fa fa-github"></a>
+  <section>
+    <p>Made with ❤️ by Mohammad Kawshick</p>
+    </section>
+  </div>
+</footer> 
+
+<!-- END FOOTER SECTION -->
   </body>
 </html>
