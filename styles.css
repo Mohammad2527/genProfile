@@ -1,3 +1,20 @@
 nav {
   background-color: #622870;
 }
+#header {
+  background: #3d3175;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #greet {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  #greet {
+    font-size: 20px;
+  }
+}
